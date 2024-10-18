@@ -1,13 +1,18 @@
+import React from "react";
 import { Outlet } from "react-router-dom";
 import style from "./PublicLayout.module.css";
+import { PLATFORM_NAME } from "../constants/settings";
+import { QuickIcons } from "./menu_quick_icons/QuickIcons";
 
-const PublicLayout = () => {
+const PublicLayout: React.FC = () => {
   return (
     <div>
       <header className={`row ${style.header}`}>
-        <div>platform name</div>
+        <div>{PLATFORM_NAME}</div>
         <div>menu</div>
-        <div className={style.quickIcons}>quick icons</div>
+        <div className={style.quickIcons}>
+          <QuickIcons />
+        </div>
       </header>
       <main>
         <Outlet />

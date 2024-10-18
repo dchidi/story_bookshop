@@ -1,6 +1,11 @@
 .header {
-  background-color: red;
+  padding: 1rem;
+  align-items: center;
+  gap: 40px;
 }
 .quickIcons {
   margin-left: auto;
+}
+main {
+  padding: 1rem;
 }

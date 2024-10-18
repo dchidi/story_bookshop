@@ -2,7 +2,7 @@ import React from "react";
 import { Navigate } from "react-router-dom";
 
 // Mock authentication function (replace this with actual auth logic)
-const isAuthenticated = () => {
+const isAuthenticated = (): boolean => {
   return !!localStorage.getItem("authToken"); // Example using localStorage
 };
 

@@ -1,4 +1,4 @@
-import { Suspense, lazy } from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // Lazy load components
@@ -11,7 +11,7 @@ const DashboardLayout = lazy(() => import("../layouts/DashboardLayout"));
 const Error404 = lazy(() => import("../pages/Error404"));
 const ProtectedRoute = lazy(() => import("./ProtectedRoute"));
 
-function MainRoute() {
+const MainRoute: React.FC = () => {
   return (
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
@@ -43,6 +43,6 @@ function MainRoute() {
       </Suspense>
     </Router>
   );
-}
+};
 
 export default MainRoute;

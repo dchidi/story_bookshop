@@ -23,3 +23,11 @@ a:hover {
   --text-color: #213547;
   --link-hover-color: #747bff;
 }
+.row,
+.col {
+  display: flex;
+  gap: 10px;
+}
+.col {
+  flex-direction: column;
+}

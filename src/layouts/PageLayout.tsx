@@ -1,15 +1,16 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import style from "./PublicLayout.module.css";
+import style from "./PageLayout.module.css";
 import { PLATFORM_NAME } from "../constants/settings";
 import { QuickIcons } from "./menu_quick_icons/QuickIcons";
+import { Menu } from "../components/menu/Menu";
 
-const PublicLayout: React.FC = () => {
+const PageLayout: React.FC = () => {
   return (
     <div>
       <header className={`row ${style.header}`}>
         <div>{PLATFORM_NAME}</div>
-        <div>menu</div>
+        <Menu />
         <div className={style.quickIcons}>
           <QuickIcons />
         </div>
@@ -22,4 +23,4 @@ const PublicLayout: React.FC = () => {
   );
 };
 
-export default PublicLayout;
+export default PageLayout;

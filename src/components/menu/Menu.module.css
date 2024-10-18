@@ -1,24 +1,20 @@
-.btn,
-.roundBtn {
-  transition: 30ms all;
-}
-
-.roundBtn {
-  border-radius: 100px;
+ul.menu {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  background-color: #444;
   padding: 5px;
-  font-size: 0.8em;
-  font-weight: 600;
-  transition: 30ms all;
+  border-radius: 100px;
 }
-.default {
-  background-color: aliceblue;
-  color: #222;
+ul.menu li {
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: background-color 0.5s ease, color 0.5s ease, padding 0.5s ease;
 }
-.transparent {
+ul.menu li.active {
+  background-color: #625cff;
   color: aliceblue;
-}
-
-.btn:hover,
-.roundBtn:hover {
-  transform: scale(1.2);
+  padding: 5px 20px;
 }

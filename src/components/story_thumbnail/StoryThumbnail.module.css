@@ -1,0 +1,53 @@
+.color1,
+.color4,
+.color2 {
+  color: #000;
+}
+
+.color3 {
+  color: #fff;
+}
+
+.color1 {
+  background-color: aliceblue;
+}
+
+.color2 {
+  background-color: #aaa;
+}
+
+.color3 {
+  background-color: #625cff;
+}
+
+.color4 {
+  background-color: #ff9193;
+}
+.root {
+  display: flex;
+  position: relative;
+}
+.sm,
+.lg {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 8px;
+  padding: 3px;
+  height: 20rem;
+  margin-bottom: 10px;
+}
+.sm {
+  width: 300px;
+}
+.lg {
+  flex: 1;
+}
+.icons {
+  position: absolute;
+  right: 20px;
+}
+.img {
+  border-radius: 6px;
+  height: 19.6rem;
+  width: 300px;
+  object-fit: cover;
+}

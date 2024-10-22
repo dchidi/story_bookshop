@@ -8,7 +8,7 @@ export const QuickIcons: React.FC = () => {
   return (
     <div className={`row ${style.quickIcon}`}>
       <Search />
-      <Cart />
+      <Cart onclick={() => {}} />
       <ProfileMenu />
     </div>
   );

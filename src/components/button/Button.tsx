@@ -2,17 +2,19 @@ import React from "react";
 import style from "./Button.module.css";
 import classNames from "classnames";
 
+export type btnType =
+  | "primary"
+  | "secondary"
+  | "warning"
+  | "success"
+  | "default"
+  | "transparent";
+
 interface IButton {
   children: React.ReactNode;
   className?: string;
   onclick: () => void;
-  buttonType?:
-    | "primary"
-    | "secondary"
-    | "warning"
-    | "success"
-    | "default"
-    | "transparent";
+  buttonType?: btnType;
 }
 
 const Button: React.FC<IButton> = ({

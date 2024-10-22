@@ -1,11 +1,22 @@
 import { HiOutlineShoppingBag } from "react-icons/hi2";
-import Button from "../button/Button";
-export const Cart: React.FC = () => {
+import { btnType, RoundButton } from "../button/Button";
+
+interface ICart {
+  size?: number;
+  buttonType?: btnType;
+  onclick: () => void;
+}
+
+export const Cart: React.FC<ICart> = ({
+  size = 30,
+  buttonType = "transparent",
+  onclick = () => {},
+}) => {
   return (
     <>
-      <Button onclick={() => {}}>
-        <HiOutlineShoppingBag size={30} />
-      </Button>
+      <RoundButton onclick={onclick} buttonType={buttonType}>
+        <HiOutlineShoppingBag size={size} />
+      </RoundButton>
       {/* <ul className={style.profileMenu}>
         <li></li>
       </ul> */}

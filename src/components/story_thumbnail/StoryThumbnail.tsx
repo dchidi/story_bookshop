@@ -1,8 +1,7 @@
-import { RoundButton } from "../button/Button";
 import { Cart } from "../cart/Cart";
+import { Wish } from "../wish_btn/Wish";
 import style from "./StoryThumbnail.module.css";
 import classNames from "classnames";
-import { FaHeart } from "react-icons/fa";
 
 interface IStoryThumbnail {
   iconsPosition?: "topLeft" | "topRight" | "bottomLeft" | "bottomRight";
@@ -37,10 +36,8 @@ const StoryThumbnail: React.FC<IStoryThumbnail> = ({
       className={rootCSS}
     >
       <div className={`${style.icons} ${style[iconsPosition]}`}>
-        <Cart size={20} buttonType="default" onclick={() => {}} />
-        <RoundButton onclick={() => {}}>
-          <FaHeart />
-        </RoundButton>
+        <Cart size={18} buttonType="default" onclick={() => {}} />
+        <Wish size={16} buttonType="default" onclick={() => {}} />
       </div>
       <div>
         <img src={imagePath} alt="" className={style.img} />

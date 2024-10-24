@@ -7,7 +7,7 @@ const Home = () => {
       <PageSection title="Top Rated">
         <div className="row">
           <StoryThumbnail
-            title="Whispers Beneath the Moon"
+            title="Whispers Beneath the Moon Whispers Beneath"
             id={1}
             backgroundColor="color3"
             size="sm"

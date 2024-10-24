@@ -53,4 +53,18 @@
   height: 19.6rem;
   width: 300px;
   object-fit: cover;
+  border: solid 1px #bbb;
+}
+.img .sm {
+  width: 100%;
+  position: relative;
+}
+.smTitle {
+  display: inline;
+  position: absolute;
+  width: 60%;
+  background-color: #fff;
+  color: #000;
+  top: 10em;
+  left: 1em;
 }

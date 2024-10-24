@@ -28,6 +28,26 @@ const StoryThumbnail: React.FC<IStoryThumbnail> = ({
     style[backgroundColor],
     className
   );
+  const imgCSS = classNames(style.img, style[size]);
+  if (size === "lg")
+    return (
+      <div
+        onClick={() => {
+          console.log(id);
+        }}
+        className={rootCSS}
+      >
+        <div className={`${style.icons} ${style[iconsPosition]}`}>
+          <Cart size={18} buttonType="default" onclick={() => {}} />
+          <Wish size={16} buttonType="default" onclick={() => {}} />
+        </div>
+        <div>
+          <img src={imagePath} alt="" className={imgCSS} />
+        </div>
+
+        <h3>{title}</h3>
+      </div>
+    );
   return (
     <div
       onClick={() => {
@@ -35,15 +55,15 @@ const StoryThumbnail: React.FC<IStoryThumbnail> = ({
       }}
       className={rootCSS}
     >
-      <div className={`${style.icons} ${style[iconsPosition]}`}>
+      {/* <div className={`${style.icons} ${style[iconsPosition]}`}>
         <Cart size={18} buttonType="default" onclick={() => {}} />
         <Wish size={16} buttonType="default" onclick={() => {}} />
-      </div>
-      <div>
-        <img src={imagePath} alt="" className={style.img} />
-      </div>
+      </div> */}
+      {/* <div> */}
+      <img src={imagePath} alt="" className={imgCSS} />
+      {/* </div> */}
 
-      <h3>{title}</h3>
+      <h3 className={style.smTitle}>{title}</h3>
     </div>
   );
 };

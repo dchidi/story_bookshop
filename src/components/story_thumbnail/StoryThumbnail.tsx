@@ -55,14 +55,11 @@ const StoryThumbnail: React.FC<IStoryThumbnail> = ({
       }}
       className={rootCSS}
     >
-      {/* <div className={`${style.icons} ${style[iconsPosition]}`}>
+      <div className={`${style.icons} ${style[iconsPosition]}`}>
         <Cart size={18} buttonType="default" onclick={() => {}} />
         <Wish size={16} buttonType="default" onclick={() => {}} />
-      </div> */}
-      {/* <div> */}
+      </div>
       <img src={imagePath} alt="" className={imgCSS} />
-      {/* </div> */}
-
       <h3 className={style.smTitle}>{title}</h3>
     </div>
   );

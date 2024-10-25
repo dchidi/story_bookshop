@@ -1,6 +1,7 @@
+/* Text and background color classes */
 .color1,
-.color4,
-.color2 {
+.color2,
+.color4 {
   color: #000;
 }
 
@@ -23,24 +24,34 @@
 .color4 {
   background-color: #ff9193;
 }
+
+/* General layout and container styles */
 .root {
   display: flex;
   position: relative;
 }
+
 .sm,
 .lg {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 8px;
-  padding: 3px;
+  padding: 1px;
   height: 20rem;
   margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /* Common box-shadow */
 }
+
 .sm {
   width: 300px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px,
+    /* Different shadow for .sm */ rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
+
 .lg {
   flex: 1;
 }
+
+/* Icon positioning */
 .icons {
   position: absolute;
   right: 10px;
@@ -48,23 +59,47 @@
   display: flex;
   gap: 5px;
 }
+
+/* Image styling */
 .img {
-  border-radius: 6px;
-  height: 19.6rem;
+  border-radius: 8px;
+  height: 100%;
   width: 300px;
   object-fit: cover;
-  border: solid 1px #bbb;
 }
+
+/* Small thumbnail style */
 .img .sm {
   width: 100%;
   position: relative;
 }
+
+/* Title styling with truncation */
 .smTitle {
-  display: inline;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* Limit to 4 lines */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds the ellipsis (...) */
   position: absolute;
-  width: 60%;
+  max-width: 60%;
   background-color: #fff;
   color: #000;
-  top: 10em;
+  top: 8em;
   left: 1em;
+  border-radius: 10px;
+  padding: 5px 10px;
+  white-space: normal; /* Allows text to wrap */
+  word-wrap: break-word; /* Ensures long words wrap */
+}
+
+.smTitle:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #625cff;
+}
+
+/* Icon positioning inside .sm */
+.root .sm .icons {
+  position: absolute;
 }

@@ -143,3 +143,6 @@ var {
 .col {
   flex-direction: column;
 }
+.row {
+  flex-wrap: wrap;
+}

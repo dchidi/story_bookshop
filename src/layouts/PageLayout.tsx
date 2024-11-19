@@ -9,7 +9,7 @@ const PageLayout: React.FC = () => {
   return (
     <div>
       <header className={`row ${style.header}`}>
-        <div>{PLATFORM_NAME}</div>
+        <div className={style.platformName}>{PLATFORM_NAME}</div>
         <Menu />
         <div className={style.quickIcons}>
           <QuickIcons />

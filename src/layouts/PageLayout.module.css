@@ -1,3 +1,6 @@
+.root {
+  min-height: 100vh;
+}
 .header {
   padding: 1rem;
   align-items: center;
@@ -8,4 +11,7 @@
 }
 main {
   padding: 1rem;
+}
+.platformName {
+  color: #999;
 }

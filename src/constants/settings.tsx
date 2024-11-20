@@ -1,17 +1,17 @@
 export const PLATFORM_NAME = (
   <div>
-    <div>story</div>
-    <div>Bookshop</div>
+    <div className="platformName">DreamStudio</div>
+    <div className="platformNameSub">MarketPlace</div>
   </div>
 );
-export const LOGOUT_MENU = [
+const BaseMenu = [
   { label: "/shop", value: "Shop" },
   { label: "/deals", value: "Deals" },
-  { label: "/login", value: "Login" },
+  { label: "/kids", value: "For Kids" },
 ];
+export const LOGOUT_MENU = [...BaseMenu, { label: "/login", value: "Login" }];
 export const LOGIN_MENU = [
-  { label: "/shop", value: "Shop" },
-  { label: "/deals", value: "Deals" },
+  ...BaseMenu,
   { label: "/dashboard/orders", value: "Orders" },
   { label: "/dashboard/my-stories", value: "My Stories" },
   { label: "/dashboard/wish-list", value: "Wish List" },

@@ -7,9 +7,9 @@ import { Menu } from "../components/menu/Menu";
 
 const PageLayout: React.FC = () => {
   return (
-    <div>
+    <div className={style.root}>
       <header className={`row ${style.header}`}>
-        <div>{PLATFORM_NAME}</div>
+        <div className={style.platformName}>{PLATFORM_NAME}</div>
         <Menu />
         <div className={style.quickIcons}>
           <QuickIcons />

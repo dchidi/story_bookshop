@@ -28,7 +28,7 @@ const StoryThumbnail: React.FC<IStoryThumbnail> = ({
     style[backgroundColor],
     className
   );
-  const imgCSS = classNames(style.img, style[size]);
+  const imgCSS = classNames(style[size], style.img);
   if (size === "lg")
     return (
       <div
@@ -45,7 +45,10 @@ const StoryThumbnail: React.FC<IStoryThumbnail> = ({
           <img src={imagePath} alt="" className={imgCSS} />
         </div>
 
-        <h3>{title}</h3>
+        <div className={style.content}>
+          <h3 className={style.title}>{title}</h3>
+          <p className={style.author}>Chidi D.</p>
+        </div>
       </div>
     );
   return (
@@ -60,7 +63,7 @@ const StoryThumbnail: React.FC<IStoryThumbnail> = ({
         <Wish size={16} buttonType="default" onclick={() => {}} />
       </div>
       <img src={imagePath} alt="" className={imgCSS} />
-      <h3 className={style.smTitle}>{title}</h3>
+      <h3 className={style.caption}>{title}</h3>
     </div>
   );
 };

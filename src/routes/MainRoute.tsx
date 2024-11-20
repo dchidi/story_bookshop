@@ -4,7 +4,7 @@ import Deals from "../pages/Deals";
 import WishList from "../pages/WishList";
 
 // Lazy load components
-const Home = lazy(() => import("../pages/Home"));
+const Shop = lazy(() => import("../pages/Shop"));
 const MyStories = lazy(() => import("../pages/MyStories"));
 const Login = lazy(() => import("../pages/Login"));
 const Orders = lazy(() => import("../pages/Orders"));
@@ -19,8 +19,8 @@ const MainRoute: React.FC = () => {
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<PageLayout />}>
-            <Route index element={<Home />} />
-            <Route path="shop" element={<Home />} />
+            <Route index element={<Shop />} />
+            <Route path="shop" element={<Shop />} />
             <Route path="deals" element={<Deals />} />
             <Route path="login" element={<Login />} />
           </Route>

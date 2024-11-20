@@ -1,9 +1,13 @@
 import PageSection from "../components/page_section/PageSection";
+import Slider from "../components/slider/Slider";
 import StoryThumbnail from "../components/story_thumbnail/StoryThumbnail";
 
 const Shop = () => {
   return (
     <>
+      <div>
+        <Slider />
+      </div>
       <PageSection title="Top Rated">
         <div className="row">
           <StoryThumbnail

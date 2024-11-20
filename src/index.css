@@ -146,3 +146,10 @@ var {
 .row {
   flex-wrap: wrap;
 }
+
+.platformName,
+.platformNameSub {
+  font-size: 0.9em;
+}
+.platformNameSub {
+}

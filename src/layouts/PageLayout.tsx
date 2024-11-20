@@ -7,7 +7,7 @@ import { Menu } from "../components/menu/Menu";
 
 const PageLayout: React.FC = () => {
   return (
-    <div>
+    <div className={style.root}>
       <header className={`row ${style.header}`}>
         <div className={style.platformName}>{PLATFORM_NAME}</div>
         <Menu />

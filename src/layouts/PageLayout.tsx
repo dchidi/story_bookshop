@@ -4,6 +4,7 @@ import style from "./PageLayout.module.css";
 import { PLATFORM_NAME } from "../constants/settings";
 import { QuickIcons } from "./menu_quick_icons/QuickIcons";
 import { Menu } from "../components/menu/Menu";
+import FooterLayout from "./FooterLayout";
 
 const PageLayout: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const PageLayout: React.FC = () => {
         <Outlet />
         {/* This will render the nested routes (MyStories, Orders, etc.) */}
       </main>
+      <FooterLayout />
     </div>
   );
 };

@@ -1,8 +1,12 @@
-.slider {
+.slider,
+.sliderFooter {
   height: 75vh;
   margin-bottom: 2em;
   position: relative;
   overflow: hidden;
+}
+.sliderFooter {
+  height: 48vh;
 }
 
 .slides {
@@ -11,7 +15,13 @@
   overflow: hidden;
   height: 75vh;
 }
-
+.slidesFooter {
+  position: relative;
+  /* width: 100%; */
+  background-color: red;
+  /* overflow: hidden; */
+  height: 35vh;
+}
 .slideWrapper {
   width: 100%;
   height: 100%;
@@ -52,4 +62,11 @@
 .slideOne img {
   width: 100%;
   height: 100%;
+}
+.footerTitle {
+  color: #888;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  margin-bottom: 1em;
 }

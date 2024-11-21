@@ -1,0 +1,31 @@
+.root {
+  background-color: #333;
+  color: #f9f9f9;
+  padding: 2em 3em;
+  display: flex;
+  gap: 60px;
+  height: 60vh;
+  overflow: hidden;
+  margin: 0 1em;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+ul.footermenu {
+  list-style: none;
+  text-align: center;
+}
+
+ul.footermenu li {
+  padding: 0.5em 0;
+  cursor: pointer;
+}
+ul.footermenu li:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: rgb(204, 251, 243);
+}
+.slider {
+  flex: 1;
+  background-color: #444;
+  padding: 2em;
+}

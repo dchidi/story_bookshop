@@ -55,7 +55,7 @@ const Shop = () => {
       </PageSection>
       <PageSection title="Stories">
         <div className="row">
-          {[...new Array(8).fill("a")].map((item, index) => (
+          {[...new Array(9).fill("a")].map((item, index) => (
             <StoryThumbnail
               key={index}
               title="Whispers Beneath the Moon Whispers Beneath  Moon Whispers Beneath  Moon Whispers Beneath"
@@ -69,12 +69,12 @@ const Shop = () => {
           <div>right</div> */}
         </div>
       </PageSection>
-      <PageSection>
+      {/* <PageSection>
         <div className="row">
           <div>left</div>
           <div>right</div>
         </div>
-      </PageSection>
+      </PageSection> */}
     </>
   );
 };

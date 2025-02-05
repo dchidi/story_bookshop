@@ -1,0 +1,18 @@
+.timer {
+  margin: 3px 0;
+}
+
+.timer span {
+  display: inline-block;
+}
+.timer span:first-child {
+  padding-right: 5px;
+}
+
+.timer span:not(:first-child) {
+  padding: 5px;
+}
+
+.hide {
+  display: none;
+}
